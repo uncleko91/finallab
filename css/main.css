@@ -1,0 +1,377 @@
+body{
+    margin: 0;
+    line-height: auto;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    margin: 5px auto;
+}
+.banner{
+    position: relative;
+    background-image: url(https://www.carsome.my/_nuxt/img/hero-my-mobile-1500.4b2231a.jpg);
+    background-size: cover;
+    height: 560px;
+    width: 100%;
+    background-position: bottom;
+}
+
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content:space-between;
+}
+.align-center{
+    align-items: center;
+}
+header{
+    margin: 5px;
+}
+header nav a{
+    color: black;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+#mobile_menu{
+    background-color: black;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    display: none;
+}
+#mobile_menu nav.flex{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#mobile_menu nav a{
+    color: white;   
+}
+
+header #mobile_cta{
+    display: none;
+}
+@media (max-width: 500px){
+    header #mobile_cta{
+        display: block;
+    }
+    header nav{
+        display:none;
+    }
+    #mobile_menu nav a:hover{
+        text-shadow: 0 3px 10px rgb(181, 181, 181);
+    }
+    header nav a{
+        padding:0;
+    }
+}
+
+.show{
+    display: block !important;
+    animation: showmenu 2s slidein;
+}
+
+.hide{
+    animation: hidemenu 2s ease-in-out;
+}
+
+.banner_content{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding: 90px 90px 0;
+}
+
+.banner h1{
+    font-size: xx-large;
+    padding-right: 35%;
+}
+
+.banner p{
+    font-size: x-large;
+    padding-right: 30%;
+}
+
+#btn {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn a{
+    text-decoration: none;
+    color: white;
+    background-color: teal;
+    background-size: cover;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+#btn span{
+    align-items: center;
+}
+
+@media (max-width: 500px){
+    .banner_content{
+        position: absolute;
+        top: -20px;
+        width: 100%;
+        padding: 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .banner h1{
+        padding: 10px 10px 0px 10px;
+    }
+    .banner p{
+        padding: 0px 10px 0px 10px;
+    }
+    #btn {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #btn a{
+        text-decoration: none;
+        color: white;
+        background-color: teal;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    .banner h1{
+        text-align: center;
+    }
+    .banner p{
+        text-align: center;
+    }
+}
+
+.promise{
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.promise p{
+    text-align: center;
+
+}
+
+.promise_container{
+    margin: 10px;
+}
+.grid{
+    display: grid;
+    gap: 20px 15px;
+}
+
+.grid__4{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.promise_box{
+    background-color: white;
+    border: 1px solid rgb(143, 143, 143);
+    box-shadow: 0 3px 10px rgb(181, 181, 181);
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promise_logo{
+    background-color: rgb(22, 39, 88);
+    border-radius: 50px;
+    padding: 10px 10px 5px 10px;
+}
+
+.logo__border{
+    position: relative;
+    top: -30px;
+}
+
+@media (max-width: 500px){
+    .grid{
+        display: grid;
+        gap: 50px 15px;
+    }
+    .grid__4{
+        grid-template-columns: auto;
+    }
+    .promise p{
+        padding-bottom: 20px;
+    }
+    .promise h1{
+        padding-top: 20px;
+    }
+}
+.sales__container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sales\ office.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 569px;
+    background-position: 50%;
+}
+.sales__container__2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sell-car-landing-my.89b73be.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 569px;
+    background-position: 50%;
+   padding-bottom: 15px;
+}
+.sales__wrapper{
+    position: relative;
+    top: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 16px!important;
+    padding-left: 16px!important;
+}
+
+.sales__text h2{
+    color: white;
+    text-align: center;
+}
+.sales__text ul{
+    color: white;
+}
+.sales__text p{
+    color: white;
+    font-size: xx-small;
+    text-align: center;
+}
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(107, 107, 107);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.sales__text{
+    padding: 30px;
+}
+
+.contact_form h3{
+    text-align: center;
+}
+.contact_form p{
+    font-size: xx-small;
+    text-align: center;
+}
+
+.contact_form form input{
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 500px){
+    .sales__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.works{
+    margin: 10px;
+}
+.works_box{
+    background-color: white;
+    border: 1px solid rgb(143, 143, 143);
+    box-shadow: 0 3px 10px rgb(181 181 181);
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why{
+    margin: 30px;
+}
+.why_box{
+    flex-direction: column;
+    align-items: center;
+}
+.grid__5{
+    grid-template-columns: repeat(5, 1fr);
+}
+@media (max-width: 500px){
+    .grid__5{
+        grid-template-columns: auto;
+    }
+}
+.about_text{
+    margin: 25px;
+}
+.about_container img{
+    width: 200px;
+    height: 150px;
+    padding-right: 30px;
+}
+.about_container.flex{
+    align-items: center;
+}
+.vision{
+    margin: 25px;
+}
+.do_container{
+    margin: 25px;
+}
+.thumb.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 500px){
+    .about_container.flex{
+        flex-direction: column;
+    }
+    .thumb.flex img{
+        width: 300px;
+    }
+}
+
+.search_form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.search_form input{
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+}
+
+
+.car_container{
+    margin: 10px;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carking - Buy & sell Cars Online</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header class="header flex justify-between align-center">
+        <div class="web_logo">
+                    <img src="img/CARKING.png"  alt="logo" style="width: 100px; height:auto; padding-left: 10px; padding-top: 10px;"/>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index1.html">Buy Car</a>
+            <a href="index2.html">Sell Car</a>
+            <a href="index3.html">About Carking</a>
+        </nav>
+        <button id="mobile_cta">
+        <i class="fa fa-bars" style="font-size: 35px;"></i>
+        </button>
+        <div id="mobile_menu" class="popup">
+            <nav class="flex">
+                <a href="index.html">Home</a>
+                <a href="index1.html">Buy Car</a>
+                <a href="index2.html">Sell Car</a>
+                <a href="index3.html">About Carking</a>
+                <button id="close">X</button>
+            </nav>
+        </div>
+        
+    </header>
+    <main class="container">
+        <div class="banner">
+            <div class="banner_content">
+                <h1>Buy your car with peace of mind</h1>
+                <p>Only RM88 in monthly installment*</p>
+                <div id="btn">
+                    <a href="index1.html"><span class="first_btn">Buy A Car</span></a>
+                    <span class="flex">or</span>
+                    <a href="index2.html"><span class="scdn_btn">Sell Your Car</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="promise flex">
+            <h1>Carking Promise</h1>
+            <p>We promise to deliver  only the highest quality in our Carking Certified cars for our customers. Our pledge includes these 4 promises.</p>
+        </div>
+
+        <div class="promise_container grid grid__4">
+            <div class="promise_box flex">
+                <div class= "logo__border">
+                    <div class="promise_logo"><img src="img/assured-blue-1-MY.00ddf42.png"> </div>
+                </div>
+                <h3 style="text-align: center; padding-left: 5px; padding-right: 5px;">175-point Inspection</h3>
+                <p style="text-align: center; padding-left: 5px; padding-right: 5px;">Professional 175-point inspection with no major accidents,frame, fire or flood damage</p>
+            </div>
+            <div class="promise_box flex">
+                <div class= "logo__border">
+                    <div class="promise_logo"><img src="img/assured-blue-2-MY.bf0482f.png"> </div>
+                </div>
+                <h3 style="text-align: center; padding-left: 5px; padding-right: 5px;">Fixed Price, No hidden Fees</h3>
+                <p style="text-align: center; padding-left: 5px; padding-right: 5px;">No surprises and no haggling with our prices. Expect full transparency for peace of mind.</p>
+            </div>
+            <div class="promise_box flex">
+                <div class= "logo__border">
+                    <div class="promise_logo"><img src="img/assured-blue-3-MY.3abcb5e.png"> </div>
+                </div>
+                <h3 style="text-align: center; padding-left: 5px; padding-right: 5px;">1-Year Warranty</h3>
+                <p style="text-align: center; padding-left: 5px; padding-right: 5px;">We’ll cover your first year with an extended warranty to ensure every drive is roadworthy.</p>
+            </div>
+            <div class="promise_box flex">
+                <div class= "logo__border">
+                    <div class="promise_logo"><img src="img/assured-blue-4-MY.6472009.png"> </div>
+                </div>
+                <h3 style="text-align: center; padding-left: 5px; padding-right: 5px;">5-Day Money-back Guarantee</h3>
+                <p style="text-align: center; padding-left: 5px; padding-right: 5px;">We are confident in our cars, but if you don't like it, enjoy a full refund within 5 days.</p>
+            </div>
+        </div>
+
+        <div class="sales__container">
+            <div class="sales__wrapper">
+                <div class="sales__text">
+                    <h2>Want to sell or trade-in your car?</h2>
+                    <p>Safe, secure& fast transaction in 24 hours.</p>
+                    <ul>
+                        <li>30-Minutes Inspection Time</li>
+                        <li>Receive payment in 1-hour*</li>
+                        <li>Hassle-Free and No Paperwork</li>
+                    </ul>
+                    <p>*T&C Apply</p>
+                </div>
+                <div class="contact_form">
+                    <h3>Enter Your Details For A Free Inspection</h3>
+                    <form action="/" method="POST">
+                        <label>Car Brand</label> <br/>
+                        <div>
+                        <input type="text" list="carbrands" placeholder="Select Brand"/>
+                            <!-- <datalist id="carbrands">
+                                <option value="toyota">Toyota</option>
+                                <option value="perodua">Perodua</option>
+                                <option value="proton">Proton</option>
+                                <option value="honda">Honda</option>
+                                <option value="mazda">Mazda</option>
+                            </datalist> -->
+                        </div>
+                        <label>Car Model</label> <br/>
+                      <input type="text" name="Car Model" placeholder="Select Model"/>
+                      <!-- <br /> -->
+                      <label>Mobile No.</label> <br/>
+                      <input type="number" name="number" placeholder="0123456789"/>
+                      <br />
+                      <input type="submit" value="Start Here"  style="background-color: rgb(218, 186, 6); border:none"/>
+                    </form>
+                    <p>By proceeding, I agree to the Privacy Policy & Terms of Use</p>
+            </div>
+        </div>
+
+    </main>
+    
+
+</body>
+<script src="js/main.js"></script>
+</html>
